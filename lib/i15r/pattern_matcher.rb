@@ -4,7 +4,6 @@ class I15R
     HAML_SYMBOLS = ["%", "#", "{", "}", "(", ")", ".", "_", "-"]
     PATTERNS = {
       :erb => [
-        /<%=\s*link_to\s+(?!.*&.*;)(?<title>['"].+?['"])/,
         /<%=.*label(_tag)?[^,]+?(?<label-title>(['"].+?['"]|:[[:alnum:]_]+))[^,]+%>.*$/,
         /<%=.*label(_tag)?.*?,\s*(?<label-title>(['"].+?['"]|:[[:alnum:]_]+))/,
         /<%=.*submit(_tag)?\s+(?<submit-text>(['"].+?['"]|:[[:alnum:]_]+))/,
